@@ -127,11 +127,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Equip.cpp" />
+    <ClCompile Include="Equipment.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Simulator.cpp" />
     <ClCompile Include="StarForce.cpp" />
+    <ClCompile Include="StarForceSimulator.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Equip.h" />
+    <ClInclude Include="Equipment.h" />
+    <ClInclude Include="Simulator.h" />
+    <ClInclude Include="StarForce.h" />
+    <ClInclude Include="StarForceInfo.h" />
+    <ClInclude Include="StarForceSimulator.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
