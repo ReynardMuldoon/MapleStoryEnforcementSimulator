@@ -71,6 +71,13 @@
 
 - bool TryEnchant(int level): 강화 1회 시도
 
+- void Succeeded(): 강화 성공 시 호출되는 함수
+- void Failed(): 강화 실패 시 호출되는 함수
+- void Destroyed(): 강화 실패로 인한 장비 파괴 시 호출되는 함수
+
+- long long GetCost(int level) const: 현재 강화 1회 시도 시 필요한 비용 계산
+
+
 
 # StarForce
 스타포스 관련 정보 저장한 헤더 파일
@@ -86,9 +93,3 @@
 ## 4. 스타포스 최대 수치
 
 - 장비 레벨에 따른 스타포스 최대 수치를 반환하는 함수
-
-- void Succeeded(): 강화 성공 시 호출되는 함수
-- void Failed(): 강화 실패 시 호출되는 함수
-- void Destroyed(): 강화 실패로 인한 장비 파괴 시 호출되는 함수
-
-- long long GetCost(int level) const: 현재 강화 1회 시도 시 필요한 비용 계산
