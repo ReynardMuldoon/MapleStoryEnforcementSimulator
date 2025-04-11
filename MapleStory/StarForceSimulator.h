@@ -1,12 +1,11 @@
 #pragma once
 
-#include <vector>
 #include "Equipment.h"
+#include <mutex>
 
 class StarForceSimulator
 {
 private:
-	std::vector<Equipment*> equipments;
 	int equipLevel;
 	long long spareCost;
 	int startStarForce;
@@ -15,6 +14,7 @@ private:
 
 	long long totalCost;
 	int totalDestroy;
+	std::mutex mtx;
 
 public:
 	StarForceSimulator(int _equipLevel, long long _spareCost, int _startStarForce, int _goalStarForce, int _simulationCount);
@@ -24,6 +24,4 @@ public:
 	int SimulationCount() const { return simulationCount; }
 
 	void run();
-
-	~StarForceSimulator();
 };
